@@ -231,20 +231,6 @@ this.createjs = this.createjs||{};
 	}
 	var p = createjs.extend(Stage, createjs.Container);
 
-	/**
-	 * <strong>REMOVED</strong>. Removed in favor of using `MySuperClass_constructor`.
-	 * See {{#crossLink "Utility Methods/extend"}}{{/crossLink}} and {{#crossLink "Utility Methods/promote"}}{{/crossLink}}
-	 * for details.
-	 *
-	 * There is an inheritance tutorial distributed with EaselJS in /tutorials/Inheritance.
-	 *
-	 * @method initialize
-	 * @protected
-	 * @deprecated
-	 */
-	// p.initialize = function() {}; // searchable for devs wondering where it is.
-
-
 // events:
 	/**
 	 * Dispatched when the user moves the mouse over the canvas.
@@ -438,7 +424,7 @@ this.createjs = this.createjs||{};
 	 * event is received. This allows you to register a Stage instance as a event listener on {{#crossLink "Ticker"}}{{/crossLink}}
 	 * directly, using:
 	 *
-	 *      Ticker.addEventListener("tick", myStage");
+	 *      Ticker.addEventListener("tick", myStage);
 	 *
 	 * Note that if you subscribe to ticks using this pattern, then the tick event object will be passed through to
 	 * display object tick handlers, instead of <code>delta</code> and <code>paused</code> parameters.
